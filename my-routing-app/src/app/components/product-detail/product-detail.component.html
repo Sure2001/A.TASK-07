@@ -1,0 +1,9 @@
+<div class="product-card" *ngIf="product">
+  <img [src]="product.image" alt="product image" class="product-image" />
+  <div class="product-details">
+    <h3>{{ product.title }}</h3>
+    <p class="price"><strong>Price:</strong> ${{ product.price }}</p>
+    <p class="description">{{ product.description }}</p>
+  </div>
+</div>
+<p *ngIf="!product">Loading product...</p>
